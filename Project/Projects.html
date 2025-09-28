@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Intro</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <!-- Your menu or Off-canvas content goes here -->
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- Close button -->
+        <button
+          class="close-button"
+          aria-label="Close menu"
+          type="button"
+          data-close
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Project/fun.html">About Me</a></li>
+          <li><a href="../Project/Projects.html">Projects</a></li>
+          <li><a href="../Project/Resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <!-- COMMENT -->
+      <!-- Your page content lives here -->
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- main content within a `grid-container` -->
+        <div class="grid-container">
+          <!-- `grid-x` represents a row -->
+          <div class="grid-x grid-padding-x">
+            <button
+              type="button"
+              class="cell large-auto button"
+              data-toggle="offCanvas"
+            >
+              Menu
+            </button>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="PythonProject cell large-4">
+              <h2>Python Algorithm</h2>
+              <p class="P1Python">
+                During an internship, I was tasked with building an automation
+                solution to support internal testing workflows. I developed a
+                Python script that processed JSON payloads, validated their
+                data, and compared them against a database to identify matches.
+                When matches were found, the algorithm appended them to the JSON
+                payload for further use. The backend was written in Python,
+                while the frontend was implemented in Oracle APEX. This project
+                successfully reduced manual effort and improved testing
+                efficiency.
+              </p>
+              <img
+                src="../img/pythonphotopythong.avif"
+                alt="Python Code"
+                id="PythonCode"
+              />
+              <br /><br />
+              <p>
+                I cannot show the actual production application due to
+                confidentiality agreements, but the user interface was a typical
+                form-driven web app that collected input, processed it through
+                the backend algorithm, and returned results. Below is a
+                placeholder example image of an Oracle APEX application.
+              </p>
+              <img
+                src="../img/apexoracle.png"
+                alt="APEX Oracle App"
+                id="APEXApp"
+              />
+              <br /><br />
+              <p>
+                To demonstrate the type of data my code worked with, here is a
+                generic example of a JSON payload:
+              </p>
+              <img
+                src="../img/JSONpayload.png"
+                alt="JSON Example"
+                .
+                id="JSONExample"
+              />
+            </div>
+
+            <div class="Revision Log cell large-4">
+              <h2>Revision Log</h2>
+              <p class="P2RevisionLog">
+                I worked on a full-stack web project involving C#, TypeScript,
+                Angular, and SQL. The goal was to create an internal tool that
+                allowed team members to log and track changes across different
+                sections of a large management system. This tool was designed to
+                improve efficiency by making it easier to search, create, and
+                edit change records across the system.
+              </p>
+              <img src="../img/csharpcode.avif" alt="C# Code Example" />
+              <br /><br />
+              <p>
+                Due to confidentiality agreements, I cannot disclose the exact
+                implementation, but the tool displayed data from a database,
+                allowed edits, and ensured changes were reflected immediately
+                after saving.
+              </p>
+              <img src="../img/databasepicture.png" alt="Database Table" />
+              <br /><br />
+              <p>
+                On the frontend, I implemented responsive features using SCSS,
+                TypeScript, and Angular.
+              </p>
+              <img src="../img/typescript.avif" alt="TypeScript Code Example" />
+            </div>
+
+            <div class="cell large large-auto">
+              <h2>Graphing Calculator</h2>
+              <p class="P3GraphingCalculator">
+                This project is a browser based graphing calculator in an
+                attempt to replicate the abilities of the online graphic
+                calculator Desmos. This project was done with JavaScript, HTML,
+                and CSS using Math.js to parse and evualate equations. It has a
+                side bar where the user can add and remove functions themselves.
+                Each function has 1 of 4 distinct colors. The main graph is on
+                an HTML5 canvas, which draws axes, grid lines, and the functions
+                in real time. The user can zoom in and out, drag the graph,
+                hover to see the exact coordinates on the graph, and it can
+                calculate the area underneath the curve using the trapezoidal
+                rule.
+              </p>
+              <img
+                src="../img/GraphingCalculator.png"
+                alt="Graphing Calculator
+              Example"
+                id="GraphingCalculatorExample"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+:root {
+  --primary-color: #510c76;
+  --secondary-color: #510c76;
+  --background-light: #f8f9fa;
+  --text-dark: #222;
+  --text-light: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  background-color: var(--background-light);
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Profile / Project Images ===== */
+img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  max-width: 200px; /* keeps headshot small */
+}
+
+/* ===== Text Sections ===== */
+.introductionText {
+  font-size: 1.25rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.Goals {
+  font-style: italic;
+  background: #e9ecef;
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+
+/* ===== Buttons ===== */
+.button {
+  background-color: #98999b;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ===== Off-canvas menu ===== */
+.off-canvas {
+  background: #222;
+  color: var(--text-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.off-canvas.open {
+  transform: translateX(0);
+}
+
+.off-canvas .menu {
+  margin-top: 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+.off-canvas .menu a {
+  color: var(--text-light);
+  padding: 0.75rem 1rem;
+  display: block;
+  transition: background 0.2s;
+}
+
+.off-canvas .menu a:hover {
+  background: var(--primary-color);
+}
+
+/* ===== Resume Section ===== */
+.resume-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.resume-section h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.resume-section ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+/* ===== Projects Section ===== */
+.project {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project img {
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .off-canvas {
+    width: 100%; /* full screen nav for mobile */
+  }
+
+  .off-canvas .menu a {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .resume-section,
+  .project,
+  .introductionText,
+  .Goals {
+    padding: 0.75rem;
+    margin: 1rem;
+  }
+}
