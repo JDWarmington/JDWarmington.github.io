@@ -8,9 +8,7 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 700;
   color: #202020;
   margin-top: 1rem;
@@ -34,14 +32,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-
-img {
-  display: block;
-  margin: 1rem auto;
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
 }
 
 .introductionText {
@@ -94,39 +84,6 @@ img {
 
 .off-canvas .menu a:hover {
   background: #510c76;
-}
-
-.resume-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.resume-section h2 {
-  border-bottom: 2px solid #510c76;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-}
-
-.resume-section ul {
-  list-style: disc;
-  margin-left: 1.5rem;
-}
-
-.project {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.project img {
-  border: 2px solid #510c76;
-  border-radius: 6px;
-  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
