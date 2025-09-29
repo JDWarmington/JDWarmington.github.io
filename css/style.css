@@ -12,7 +12,6 @@ h1, h2, h3 {
   font-weight: 700;
   color: #202020;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -32,6 +31,14 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 .introductionText {
@@ -88,7 +95,7 @@ a:hover {
 
 @media (max-width: 768px) {
   body {
-    font-size: 0.90rem;
+    font-size: 0.95rem;
   }
 
   h1 {
