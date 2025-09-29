@@ -44,12 +44,6 @@ img {
   height: auto;
 }
 
-#profile-pic {
-  border-radius: 50%;
-  border: 3px solid #510c76;
-  max-width: 200px;
-}
-
 .introductionText {
   font-size: 1.1rem;
   margin: 1rem auto;
