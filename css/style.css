@@ -44,14 +44,14 @@ img {
   height: auto;
 }
 
-.profile-pic {
+#profile-pic {
   border-radius: 50%;
   border: 3px solid #510c76;
   max-width: 200px;
 }
 
 .introductionText {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin: 1rem auto;
   max-width: 800px;
   padding: 0 1rem;
